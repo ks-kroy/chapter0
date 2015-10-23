@@ -8,7 +8,7 @@
 2. texファイルの適切な場所に¥usepackage{chapter0}を入れる。
 3. ¥chapter{}を始める前に¥setcounter{chapter}{-1}を入れる。
 4. ¥setcounter{chapter}{-1}を書いた以降で最初の¥chapter{hoge}が「序章 hoge」になる。
-5. 以降の¥chapter{fuga}は「第1章 fuga」となる。  
+5. 以降の¥chapter{fuga}は「第1章 fuga」のようになる。  
 3をしなければ、いつも通り「第1章」から始まります。
 
 ## サンプル
