@@ -1,0 +1,21 @@
+\def\@makechapterhead#1{\hbox{}%
+  \vskip2\Cvs
+  {\parindent\z@
+   \raggedright
+   \reset@font\huge\bfseries
+   \leavevmode
+   \ifnum \c@secnumdepth >\m@ne
+     \setlength\@tempdima{\linewidth}%
+     \if@mainmatter
+     \ifnum\thechapter=0
+     \setbox\z@\hbox{序\@chappos\hskip1zw}%
+     \else
+     \setbox\z@\hbox{\@chapapp\thechapter\@chappos\hskip1zw}%
+     \fi
+     \addtolength\@tempdima{-\wd\z@}%
+     \unhbox\z@\nobreak
+    \fi
+     \vtop{\hsize\@tempdima#1}%
+   \else
+     #1\relax
+   \fi}\nobreak\vskip3\Cvs}
